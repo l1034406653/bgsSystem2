@@ -1,9 +1,7 @@
 <template>
 	<el-container id="app">
 		<el-header class='header-box'>
-			<div class="logo">
-				
-			</div>
+			<div class="logo"></div>
 			<h1>bgs官网后台管理系统</h1>
 		</el-header>
 		<el-main>

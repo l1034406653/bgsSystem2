@@ -23,13 +23,12 @@ Vue.use(ElementUI);
 
 /*运行环境*/
 Vue.config.productionTip = false;
-
+axios.defaults.withCredentials = true;
 /*axios配置*/
 /*axios配置*/
 Vue.prototype.$axios = axios;
 Vue.prototype.$baseURL = '/bgs/admin';
 axios.defaults.baseURL = '/bgs/admin';
-axios.defaults.withCredentials=true;
 axios.interceptors.request.use(config => {
 	let params = config.data || {};
 	config.data = qs.stringify(params);
